@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-let conexion = "mongodb+srv://adoptautsapp:-UTS1234-@cluster0.q8s9wcf.mongodb.net/adoptapet?retryWrites=true&w=majority";
+let conexion = "mongodb+srv://gabriel69x:<0000>@adoptaappcluster.ocj5g.mongodb.net/AdoptaPet?retryWrites=true&w=majority&appName=AdoptaAppCluster";
 
 mongoose.connect(conexion)
 .then(event => console.log("conectado a mongo"))
