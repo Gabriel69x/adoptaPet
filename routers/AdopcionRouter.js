@@ -19,6 +19,7 @@ AdopcionRouter.get('/buscaradoptante/:idAdoptante', (req, res) => {
        const {cedula} = req.query
     Adopcion.find({ 'usuario.cedula': cedula }).then(datos => res.json({ adopcion: datos }))
       .catch(error => res.json({ mensaje: error }));
+      console.log("hola senor locutor");
   });
 
 AdopcionRouter.post("/", (req, res) => {
